@@ -1,0 +1,5 @@
+{
+  "input": "Apache Bench is a robust tool for benchmarking the performance of your server or website. By understanding its usage and interpreting the output, you can glean valuable insights into the performance and stability of your site under various loads. Experiment with different settings and parameters to fully explore the capabilities of Apache Bench.",
+  "model": "text-embedding-ada-002",
+  "encoding_format": "float"
+}

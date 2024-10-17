@@ -1,3 +1,3 @@
 [workspace]
-members = ["model2vec_distill", "model2vec_infer"]
+members = ["model2vec_distill", "model2vec_infer", "model2vec_server"]
 resolver = "2"

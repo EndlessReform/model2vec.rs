@@ -1,4 +1,4 @@
-use candle_core::{Result, Tensor};
+use candle_core::{Result, Tensor, D};
 use candle_nn::{Embedding, Module, VarBuilder};
 use serde::Deserialize;
 
@@ -27,6 +27,6 @@ impl Model2Vec {
 impl Module for Model2Vec {
     fn forward(&self, xs: &candle_core::Tensor) -> Result<Tensor> {
         let embs = self.emb.forward(xs)?;
-        embs.mean(0)
+        embs.mean(D::Minus2)
     }
 }
