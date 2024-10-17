@@ -1,9 +1,0 @@
-[package]
-name = "model2vec_infer"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-candle-core = "0.7.2"
-candle-nn = "0.7.2"
-serde = { version = "1.0.210", features = ["derive"] }
