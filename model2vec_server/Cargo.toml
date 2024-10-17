@@ -1,0 +1,17 @@
+[package]
+name = "model2vec_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+axum = "0.7.7"
+candle-core = "0.7.2"
+candle-nn = "0.7.2"
+clap = "4.5.20"
+hf-hub = "0.3.2"
+model2vec_infer = { path = "../model2vec_infer" }
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+tokenizers = { version = "0.20.1", features = ["http"] }
+tokio = { version = "1.40.0", features = ["full"] }
