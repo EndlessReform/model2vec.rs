@@ -10,7 +10,7 @@ use axum::{
 use candle_core::{DType, Device, Tensor};
 use candle_nn::{Module, VarBuilder};
 use hf_hub::api::sync::Api;
-use model2vec_infer::{Model2Vec, Model2VecConfig};
+use model2vec_core::{config::Model2VecConfig, model::Model2Vec};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 use std::fs;

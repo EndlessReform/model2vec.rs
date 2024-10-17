@@ -1,0 +1,19 @@
+[package]
+name = "model2vec_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+candle-core = "0.7.2"
+candle-nn = "0.7.2"
+candle-transformers = "0.7.2"
+clap = "4.5.20"
+faer = "0.19.4"
+tokenizers = "0.20.1"
+serde = "1.0.210"
+serde_json = "1.0.129"
+hf-hub = "0.3.2"
+
+[profile.dev.package.faer]
+opt-level = 3
